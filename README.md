@@ -1,1 +1,1 @@
-Ćwiczenia z gita: część I
+Ćwiczenia z Git
