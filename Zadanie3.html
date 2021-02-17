@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery - Ćwiczenia git</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function pobierzNapis(){
             var napis = document.getElementsByTagName("div")[0].innerHTML;
@@ -16,5 +17,17 @@
 <body>
     <div>Bardzo lubie programować</div>
     <button onclick="pobierzNapis()">PRZYCISK</button>
+
+    <!--Wykonanie w/w funkcji w technologii jQuery-->
+    <div id="info">Aplikacja by Walerasan 2021 year </div>
+    <script>
+        $(document).ready(function(){
+            $("#info").click(function(){
+               var div = $(this).html();
+               alert(div);
+            });
+        });
+    </script>
+
 </body>
 </html>
