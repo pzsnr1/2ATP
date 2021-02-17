@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery - Ćwiczenia git</title>
+    <script>
+        function pobierzNapis(){
+            var napis = document.getElementsByTagName("div")[0].innerHTML;
+            //console.log(napis);
+            alert(napis);
+        }
+    </script>
 </head>
 <body>
-    
+    <div>Bardzo lubie programować</div>
+    <button onclick="pobierzNapis()">PRZYCISK</button>
 </body>
 </html>
